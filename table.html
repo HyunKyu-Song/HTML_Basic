@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>테이블</title>
+
+  <style>
+    table *{
+      border: 1px solid;
+    }
+    .col11{
+      width: 50px;
+    }
+    .col12{
+      width: 200px;
+    }
+    .col13{
+      width: 100px;
+    }
+  </style>
+</head>
+<body>
+  <h1>테이블</h1>
+  <p>
+    일정표, 달력, 게시판, 이력서 양식
+  </p>
+  <figure>
+    <figcaption>
+      <h2>일정표</h2>
+      <p>1/4분기 일정표</p>
+    </figcaption>
+    <table> <!-- <tavle border="1"> 임시로 적음 -->
+      <colgroup>
+        <col class="col11">
+        <col class="col12">
+        <col class="col13">
+        <col class="col13">
+      </colgroup>
+      <thead>
+        <tr>  <!--tr은 table row-->
+          <th>구분</th>  <!--th는 table head -->
+          <th scope="col">제목1</th>
+          <th scope="col">제목2</th>
+          <th scope="col">제목3</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>data11 data data data data</td> <!--td는 table data (한칸, 한셀)-->
+          <td>data12</td>
+          <td>data13</td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>data21</td>
+          <td>data22</td>
+          <td>data23</td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td>data31</td>
+          <td>data32</td>
+          <td>data33</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <th scope="row">합계</th>
+          <td>total1</td>
+          <td>total2</td>
+          <td>total3</td>
+        </tr>
+      </tfoot>
+    </table>
+  </figure>
+
+  <h2>병합</h2>
+  <table> <!-- <tavle border="1"> 임시로 적음 -->
+    <thead>
+      <tr>  <!--tr은 table row-->
+        <th>구분</th>  <!--th는 table head -->
+        <th scope="col">제목1</th>
+        <th scope="col">제목2</th>
+        <th scope="col">제목3</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">1</th>
+        <td colspan="3">data11 data data data data</td> <!--td는 table data (한칸, 한셀)-->
+      </tr>
+      <tr>
+        <th scope="row">2</th>
+        <td rowspan="2">data21</td>
+        <td>data22</td>
+        <td>data23</td>
+      </tr>
+      <tr>
+        <th scope="row">3</th>
+        <td>data32</td>
+        <td>data33</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <th scope="row">합계</th>
+        <td>total1</td>
+        <td>total2</td>
+        <td>total3</td>
+      </tr>
+    </tfoot>
+  </table>
+</body>
+</html>
