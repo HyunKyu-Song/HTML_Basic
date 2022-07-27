@@ -7,6 +7,36 @@
   <title>video_audio</title>
 </head>
 <body>
-  
+  <h1>mutimedia</h1>
+  <!--
+    video 속성들
+    scr 경로
+    controls 재생버튼들
+    autoplay 자동재생
+    muted 음소거
+    poster 썸네일
+    loop 반복재생
+    width 너비 (css에서 제어 가능)
+    height 높이 (css에서 제어 가능)
+  -->
+
+  <h2>상대경로</h2>
+  <video src="신호등.mp4" controls muted poster="썸네일.PNG">
+    <p>여기에는 비디오가 지원되지 않으면 나오는 대체 내용을 적는다</p>
+  </video>
+
+
+    <h2>외부 트래픽 서버를 이용해서 절대경로로 변경</h2>
+    <video src="https://res.cloudinary.com/dlirtty7w/video/upload/v1658884134/%EC%8B%A0%ED%98%B8%EB%93%B1_qcctqo.mp4" controls muted poster="썸네일.PNG">
+    <p>여기에는 비디오가 지원되지 않으면 나오는 대체 내용을 적는다</p>
+  </video>
+
+  <h2>유튜브에서 바로 가져오기</h2>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/JC6budcACNE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+  <hr>
+  <h2>audio</h2>
+  <p>비디오와 속성과 사용 법이 같다</p>
+  <audio src=""></audio>
 </body>
 </html>
